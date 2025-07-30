@@ -5,6 +5,7 @@ def main() -> None :
         print()
         print("1) Exit")
         print()
+        
         choice = input("Your choice: ")
 
         if choice == "1":
