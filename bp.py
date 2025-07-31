@@ -1,7 +1,15 @@
-def simple_wrap(text : str, chars : str, add_spaces : bool = True) -> str:
-    if add_spaces:
+def simple_wrap(text : str, chars : str, include_spaces : bool = False) -> str:
+    result = ""
+
+    if include_spaces:
         text = " " + text + " "
-    return chars + text + chars
+    
+    result = chars + text + chars
+    
+    if include_spaces:
+        result = " " + result + " "
+
+    return result
 
 def main() -> None :
     while True:
