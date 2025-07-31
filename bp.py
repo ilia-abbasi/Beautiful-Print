@@ -5,13 +5,13 @@ def main() -> None :
         print()
         print("1) Exit")
         print()
-        
+        print()
         choice = input("Your choice: ")
 
         if choice == "1":
             return
         
-        print("Invalid choice!")
+        print("\nInvalid choice!\n\n")
 
 
 if __name__ == "__main__":
