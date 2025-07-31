@@ -1,5 +1,16 @@
 def main() -> None :
-    print("Welcome to ~Beautiful Print~ !")
+    while True:
+        print("Welcome to ~Beautiful Print~ !")
+        print("==============================")
+        print()
+        print("1) Exit")
+        print()
+        choice = input("Your choice: ")
+
+        if choice == "1":
+            return
+        
+        print("Invalid choice!")
 
 
 if __name__ == "__main__":
