@@ -1,3 +1,16 @@
+def simple_wrap(text : str, chars : str, include_spaces : bool = False) -> str:
+    result = ""
+
+    if include_spaces:
+        text = " " + text + " "
+    
+    result = chars + text + chars
+    
+    if include_spaces:
+        result = " " + result + " "
+
+    return result
+
 def main() -> None :
     while True:
         print("Welcome to ~Beautiful Print~ !")
